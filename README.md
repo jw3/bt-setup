@@ -3,6 +3,19 @@ bt setup
 
 program various bluetooth boards
 
+### scanning for devices
+
+```
+#! bluetoothctl 
+[NEW] Controller 9C:30:5B:B5:1B:8C ctc-d4025 [default]
+[bluetooth]# set-scan-filter-clear
+SetDiscoveryFilter success
+[bluetooth]# scan on
+Discovery started
+...
+[bluetooth]# scan off
+```
+
 ### bluetooth hardware
 
 #### HC-05
